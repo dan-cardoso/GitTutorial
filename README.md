@@ -1,74 +1,23 @@
-# Como usar o Git e Github na prática
- 
-## Início do vídeo
-
-Oie gente sejam bem vindos a mais um vídeo aqui do canal, eu sou a Rafaella Ballerini e hoje eu vou mostrar pra vocês como utilizamos o GIT na prática
-
-No [vídeo anterior](https://www.youtube.com/watch?v=DqTITcMq68k) eu expliquei os conceitos de alguns termos técnicos que utilizamos quando estamos usando o git, então [nesse vídeo](https://www.youtube.com/watch?v=UBAX-13g8OM) vou mostrar na prática como isso acontece.
-
 ## Instalando o GIT
-
 * [Link com os downloads](https://git-scm.com/downloads)
 
-## Criar um projeto novo
 
-* Criar uma nova pasta no PC pra isso chamada `Git Tutorial`
-
-* Abrir o VSCode nessa pasta
-
-* Criar um novo arquivo `README.md`
-
-* Escrever dentro dele `Olá, nesse projeto você aprenderá alguns comandos do Git`
-
-* Salva o arquivo
-
-Agora então é hora de usarmos o Git
-
-* Abre o Git Bash que foi instalado na máquina (pode ser pelo terminal do VSCode mesmo)
-
+****** Abre o Git Bash no repositório
 * `git init` para inicializar o repositório
+* `git add .` para colocar o arquivo na área de stagging 
 
-Foi criada uma pastinha `.git` e é ali que toda a mágica acontece, então não apague
-
-* `git add README.md` para colocar o arquivo na área de stagging 
-
-<img src="https://i1.wp.com/www.markus-gattol.name/misc/mm/si/content/git_git_add.png">
-
-Esse `add` é necessário antes de darmos o commit de fato, mas por que isso? No final do vídeo explico para vocês
 
 * `git commit -m "primeiro commit"` para de fato dar o commit no repositório
-
 * `git branch -M "main"` para alterar o nome da branch principal de `master` para `main` (isso é uma boa prática atualmente recomendada)
 
-## Interfaces Git
-
-Beleza, recebemos a confirmação de que o commit aconteceu, mas isso tá um pouco abstrato ainda né?
-Existem algumas [interfaces legais do git](https://git-scm.com/downloads/guis) que você pode fazer o download para poder visualizar de fato como está o projeto, o que foi alterado em cada commit, quando foi alterado etc.
-Aqui eu vou mostrar pra vocês a usarem direto no Github.
 
 ## Repositório no Github
-
 * Depois de você ter criado a sua conta na plataforma, você irá em `Criar novo repositório`
 
-Você vai preencher com as informações do projeto, então dar o nome do repositório, colocar uma breve descrição e criar
-
-<img src="https://media.discordapp.net/attachments/831974152667398214/836828773067915274/unknown.png">
-
-Logo depois vai aparecer essa página um pouco cinza e confusa e com vários comandos (pode até perceber que alguns deles jpa usamos), mas o que você tem que fazer é bem simples, apenas copie o link que aparecer para você
-
-<img src="https://media.discordapp.net/attachments/831974152667398214/836828905859186708/unknown.png?width=1440&height=141">
-
-Lembra do conceito de `remote` que eu expliquei pra vocês no último vídeo? Nós iremos utilizá-lo agora
-
 * Para passar o commit do meu repositório local (da minha máquina) para um repositório na plataforma do Github, usamos o `git remote add origin <link do repositório>`
-
 * `origin` é o nome utilizado para referenciar o nosso repositório
 
-Agora já temos o nosso repositório local conectado com o respositório do Github, porém o `commit` que damos na máquina não sobe automaticamente para a plataforma
-
-* Para isso precisaremos empurrar, enviar para lá com o `git push -u origin main`
-
-Agora se recarregarmos a página iremos ver o nosso arquivo aqui na plataforma!
+enviar para lá com o `git push -u origin main`
 
 ## Alterando e adicionando arquivo
 
